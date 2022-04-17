@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{License_style}
+
+\newcommand{\thesistitlero}{Titlu generic}
+\newcommand{\thesistitleeng}{Generic Title}
+\newcommand{\studentname}{Nume Prenume}
+\newcommand{\teachername}{Nume Prenume}
+\newcommand{\teachertitle}{X X}
+
+% Delete this
+\usepackage{lipsum}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+% \includepdf[pages={1,2}]{PDF/Titlul}
+% \includepdf[]{PDF/Declar}
+% \includepdf[]{PDF/Aviz}
+
+\input{Additional/Abstract_rom.tex} 
+\clearpage
+\input{Additional/Abstract_eng.tex} 
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{8}
+
+\addcontentsline{toc}{section}{List of tables}
+\listoftables
+\clearpage
+
+\addcontentsline{toc}{section}{List of figures}
+\listoffigures
+\clearpage
+
+\addcontentsline{toc}{section}{Listings}
+\lstlistoflistings
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Introduction}
+\input{Additional/Introduction.tex}
+\clearpage
+
+\input{Chapter1/Chapter1.tex}
+\clearpage
+
+\input{Chapter2/Chapter2.tex}
+\clearpage
+
+\input{Chapter3/Chapter3.tex}
+\clearpage
+
+\input{Chapter4/Chapter4.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Conclusions}
+\input{Additional/Conclusion.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\input{Additional/References.tex}
+
+\end{document}
