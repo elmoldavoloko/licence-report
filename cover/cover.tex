@@ -1,0 +1,51 @@
+\newenvironment{titlepagefont}{\fontfamily{ptm}\selectfont}{\par}
+
+\newcommand{\thesistitlero}{Titlu generic}
+\newcommand{\thesistitleen}{Generic Title}
+\newcommand{\studentname}{Nume Prenume}
+\newcommand{\teachername}{Nume Prenume}
+\newcommand{\teachertitle}{X X}
+\newcommand{\thesisyear}{2022}
+
+\begin{titlepage}
+	\begin{titlepagefont}
+	    \centering
+	    
+	    \begin{minipage}{0.3\textwidth}
+	        \includegraphics[height=4.5cm]{cover/utmlogo.jpg}
+	    \end{minipage}
+	    ~
+	    \begin{minipage}{0.65\textwidth}
+	        {\Large \bfseries Universitatea Tehnică a Moldovei}
+	    \end{minipage}
+    	
+    	\vfill
+    	
+    	{\LARGE \bfseries \thesistitleen \par}
+        {\LARGE \bfseries \thesistitlero \par}
+    	
+    	\vfill
+    	
+    	\hfill
+        \begin{minipage}{0.2\textwidth}
+            \raggedright
+            {\Large \bfseries Student: \par}
+            \bigskip
+            {\Large \bfseries Coordonator: \par}
+            {\Large \bfseries \quad \par}
+	    \end{minipage}
+	    ~
+	    \begin{minipage}{0.5\textwidth}
+	        \raggedleft
+	        {\Large \bfseries \studentname \par}
+	        \bigskip
+	        {\Large \bfseries \teachername \par}
+	        {\Large \bfseries \teachertitle \par}
+	    \end{minipage}
+    	
+    	\vfill
+
+    	{\Large \bfseries Chișinău, \thesisyear \par}
+	
+	\end{titlepagefont}
+\end{titlepage}

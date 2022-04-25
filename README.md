@@ -12,4 +12,5 @@ An unofficial LaTeX thesis template for Bachelor's studies at the Technical Univ
 
 <!--## Contributing-->
 
-<!--Those who would like to contribute are welcome to fork the project and open a PR-->
+<!--Those who would like to contribute are welcome to open an issue.
+fork the project and open a PR-->

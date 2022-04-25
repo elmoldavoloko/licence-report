@@ -137,3 +137,6 @@
 \hypersetup{
   pdfborder = {0 0 0}
 }
+
+\def\signature#1#2{\par\noindent#1\dotfill\null\\*
+  {\raggedleft #2\par}}
