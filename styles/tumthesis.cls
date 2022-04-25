@@ -43,8 +43,8 @@
 \geometry{
     left=20mm,
     right=10mm,
-    top=10mm,
-    bottom=10mm
+    top=20mm,
+    bottom=20mm
 }
 
 % Colors for listings and not only
