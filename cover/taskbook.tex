@@ -1,17 +1,8 @@
-\newcommand{\studyprogramname}{Programul de studii Ingineria Software}
-\newcommand{\councilnr}{2}
-\newcommand{\councildate}{01 septembrie 2021}
-\newcommand{\thesisdeadline}{31 mai 2022}
-\newcommand{\taskdate}{01 septembrie 2021}
-% \newcommand{\consultantonetitle}{X X}
-% \newcommand{\consultanttwoname}{Nume Prenume}
-% \newcommand{\consultanttwotitle}{X X}
+\program{Programul de studii Ingineria Software}
 
-% \newcommand{\studentgroup}{FAF-18x}
+\council{2}{01 septembrie 2021}
+\taskdate{01 septembrie 2021}{31 mai 2022}
 
-\newcounter{rowcount}
-\setcounter{rowcount}{0}
-\def\rownumber{\stepcounter{rowcount}\arabic{rowcount}.}
 
 \begin{titlepage}
 	\begin{titlepagefont}
@@ -24,9 +15,8 @@
         \begin{minipage}{0.75\textwidth}
             {\facultyname \par}
             {\departmentname \par}
-            {\studyprogramname \par}            
+            {\programname \par}            
         \end{minipage}
-
 
     	\vfill
     	
@@ -35,7 +25,7 @@
     	    \raggedleft
         	{\small Aprob \par}
         	{\small Șef departament: \par}
-        	{\small \departmentchiefname, \departmentchieftitle \par}
+        	{\small \chairmanname, \chairmantitle \par}
         	\bigskip
         	{\small \dotfill \par}
         	{\small \councildate \par}
@@ -45,16 +35,16 @@
     	
     	{\large CAIET DE SARCINI \par}
     	{\large pentru proiectul de licență al studentului \par}
-    	{\large \studentname \par}
+    	{\large \authorname \par}
     	
     	\vfill
     	
         \begin{enumerate}[label=\arabic*.]
         
-            \item Tema proiectului de licență: \emph{\thesistitleen},
+            \item Tema proiectului de licență: \emph{\titlero},
             confirmată prin hotărârea Consiliului facultății nr. \emph{\councilnr}\ din \emph{\councildate}
             
-            \item Termenul limită de prezentare a proiectului de licență \emph{\thesisdeadline}
+            \item Termenul limită de prezentare a proiectului de licență \emph{\taskend}
             
             \item Date inițiale pentru elaborarea proiectului de licență
             
@@ -97,9 +87,9 @@
             %     \consultanttwoname & Controlul calității & & \\  \bottomrule
             % \end{tabular}
             
-            \item Data înmânării caietului de sarcini \emph{\taskdate} \\
+            \item Data înmânării caietului de sarcini \emph{\taskstart} \\
             % Coordonator \emph{\teachername} \dotfill \\
-            Sarcina a fost luată pentru a fi executată \emph{\taskdate} \\
+            Sarcina a fost luată pentru a fi executată \emph{\taskstart} \\
             % de studentul \emph{\studentname} \dotfill\ \emph{\taskdate}
         
         \end{enumerate}
@@ -115,9 +105,9 @@
         ~
         \begin{minipage}{0.35\textwidth}
             \raggedright
-            {\emph{\studentname} (\dotfill) \par}
+            {\emph{\authorname} (\dotfill) \par}
             \bigskip
-            {\emph{\teachername} (\dotfill) \par}
+            {\emph{\supername} (\dotfill) \par}
         \end{minipage}
         
         \vfill
@@ -131,13 +121,13 @@
         
             Nr. crt. & Denumirea etapelor de proiectare & Termenul de realizare a etapelor & Nota \\ \hline
             
-            \rownumber &  &  & \bigskip \\ \hline
-            \rownumber &  &  & \bigskip \\ \hline
-            \rownumber &  &  & \bigskip \\ \hline
-            \rownumber &  &  & \bigskip \\ \hline
-            \rownumber &  &  & \bigskip \\ \hline
-            \rownumber &  &  & \bigskip \\ \hline
-            \rownumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
+            \plannumber &  &  & \bigskip \\ \hline
 
         \end{tabular}
         
@@ -153,9 +143,9 @@
         ~
         \begin{minipage}{0.35\textwidth}
             \raggedright
-            {\emph{\studentname} (\dotfill) \par}
+            {\emph{\authorname} (\dotfill) \par}
             \bigskip
-            {\emph{\teachername} (\dotfill) \par}
+            {\emph{\supername} (\dotfill) \par}
         \end{minipage}
 	
 	\end{titlepagefont}

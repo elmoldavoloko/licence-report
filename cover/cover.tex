@@ -1,51 +1,53 @@
-\newenvironment{titlepagefont}{\fontfamily{ptm}\selectfont}{\par}
+\title
+    {Long Title Here Long Title Here Long Title Here}
+    {Titlul lung aici lung aici lung aici lung aici}
 
-\newcommand{\thesistitlero}{Titlu generic}
-\newcommand{\thesistitleen}{Generic Title}
-\newcommand{\studentname}{Nume Prenume}
-\newcommand{\teachername}{Nume Prenume}
-\newcommand{\teachertitle}{X X}
-\newcommand{\thesisyear}{2022}
+\author{Nume-Lung Prenume}{FAF-xxx}
+\supervisor{Nume Prenume-Lung}{conf. univ., dr.}
+
+\year{2022}
+
 
 \begin{titlepage}
 	\begin{titlepagefont}
 	    \centering
+	    \bfseries
 	    
 	    \begin{minipage}{0.3\textwidth}
 	        \includegraphics[height=4.5cm]{cover/utmlogo.jpg}
 	    \end{minipage}
 	    ~
 	    \begin{minipage}{0.65\textwidth}
-	        {\Large \bfseries Universitatea Tehnică a Moldovei}
+	        {\Large Universitatea Tehnică a Moldovei}
 	    \end{minipage}
     	
     	\vfill
     	
-    	{\LARGE \bfseries \thesistitleen \par}
-        {\LARGE \bfseries \thesistitlero \par}
+    	{\LARGE \titleen \par}
+        {\LARGE \titlero \par}
     	
     	\vfill
     	
     	\hfill
         \begin{minipage}{0.2\textwidth}
             \raggedright
-            {\Large \bfseries Student: \par}
+            {\Large Student: \par}
             \bigskip
-            {\Large \bfseries Coordonator: \par}
-            {\Large \bfseries \quad \par}
+            {\Large Coordonator: \par}
+            {\Large \quad \par}
 	    \end{minipage}
 	    ~
 	    \begin{minipage}{0.5\textwidth}
 	        \raggedleft
-	        {\Large \bfseries \studentname \par}
+	        {\Large \authorname \par}
 	        \bigskip
-	        {\Large \bfseries \teachername \par}
-	        {\Large \bfseries \teachertitle \par}
+	        {\Large \supername \par}
+	        {\Large \supertitle \par}
 	    \end{minipage}
     	
     	\vfill
 
-    	{\Large \bfseries Chișinău, \thesisyear \par}
+    	{\Large Chișinău, \degreeyear \par}
 	
 	\end{titlepagefont}
 \end{titlepage}

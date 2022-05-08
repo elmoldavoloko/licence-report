@@ -138,5 +138,72 @@
   pdfborder = {0 0 0}
 }
 
+
 \def\signature#1#2{\par\noindent#1\dotfill\null\\*
   {\raggedleft #2\par}}
+  
+\newenvironment{titlepagefont}{\fontfamily{ptm}\selectfont}{\par}
+
+\renewcommand{\title}[2]{
+    \newcommand{\titleen}{#1}
+    \newcommand{\titlero}{#2}    
+}
+
+\renewcommand{\author}[2]{
+    \newcommand{\authorname}{#1}
+    \newcommand{\authorgroup}{#2}    
+}
+
+\newcommand{\supervisor}[2]{
+    \newcommand{\supername}{#1}
+    \newcommand{\supertitle}{#2}
+}
+
+\renewcommand{\year}[1]{
+    \newcommand{\degreeyear}{#1}
+}
+
+\newcommand{\faculty}[1]{
+    \newcommand{\facultyname}{#1}
+}
+
+\newcommand{\department}[1]{
+    \newcommand{\departmentname}{#1}
+}
+
+\newcommand{\program}[1]{
+    \newcommand{\programname}{#1}
+}
+
+\newcommand{\chairman}[2]{
+    \newcommand{\chairmanname}{#1}
+    \newcommand{\chairmantitle}{#2}
+}
+
+\newcommand{\consultantone}[2]{
+    \newcommand{\consultantonename}{#1}
+    \newcommand{\consultantonetitle}{#2}
+}
+
+\newcommand{\consultanttwo}[2]{
+    \newcommand{\consultanttwoname}{#1}
+    \newcommand{\consultanttwotitle}{#2}
+}
+
+
+\newcommand{\council}[2]{
+    \newcommand{\councilnr}{#1}
+    \newcommand{\councildate}{#2}
+}
+
+\newcommand{\taskdate}[2]{
+    \newcommand{\taskstart}{#1}
+    \newcommand{\taskend}{#2}
+}
+
+
+\newcounter{plancount}
+\setcounter{plancount}{0}
+\def\plannumber{\stepcounter{plancount}\arabic{plancount}.}
+
+
