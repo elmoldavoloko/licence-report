@@ -9,6 +9,10 @@
 
 % \newcommand{\studentgroup}{FAF-18x}
 
+\newcounter{rowcount}
+\setcounter{rowcount}{0}
+\def\rownumber{\stepcounter{rowcount}\arabic{rowcount}.}
+
 \begin{titlepage}
 	\begin{titlepagefont}
 	    \centering
@@ -94,15 +98,51 @@
             % \end{tabular}
             
             \item Data înmânării caietului de sarcini \emph{\taskdate} \\
-            Coordonator \emph{\teachername} \dotfill \\
-            Sarcina a fost luată pentru a fi executată \\
-            de studentul \emph{\studentname} \dotfill\ \emph{\taskdate}
+            % Coordonator \emph{\teachername} \dotfill \\
+            Sarcina a fost luată pentru a fi executată \emph{\taskdate} \\
+            % de studentul \emph{\studentname} \dotfill\ \emph{\taskdate}
         
         \end{enumerate}
         
-        {PLAN CALENDARISTIC \par}
+        \bigskip
+        
+        \begin{minipage}{0.35\textwidth}
+            \raggedleft
+            {Student: \par}
+            \bigskip
+            {Coordonator de proiect de licență: \par}
+        \end{minipage}
+        ~
+        \begin{minipage}{0.35\textwidth}
+            \raggedright
+            {\emph{\studentname} (\dotfill) \par}
+            \bigskip
+            {\emph{\teachername} (\dotfill) \par}
+        \end{minipage}
         
         \vfill
+        
+        \bigskip
+        {PLAN CALENDARISTIC \par}
+        \bigskip
+        
+        \noindent
+        \begin{tabular}{ |p{.05\textwidth}|p{.5\textwidth}|p{.3\textwidth}|p{.05\textwidth}| } \hline
+        
+            Nr. crt. & Denumirea etapelor de proiectare & Termenul de realizare a etapelor & Nota \\ \hline
+            
+            \rownumber &  &  & \bigskip \\ \hline
+            \rownumber &  &  & \bigskip \\ \hline
+            \rownumber &  &  & \bigskip \\ \hline
+            \rownumber &  &  & \bigskip \\ \hline
+            \rownumber &  &  & \bigskip \\ \hline
+            \rownumber &  &  & \bigskip \\ \hline
+            \rownumber &  &  & \bigskip \\ \hline
+
+        \end{tabular}
+        
+        \bigskip
+        \bigskip
         
         \begin{minipage}{0.35\textwidth}
             \raggedleft
