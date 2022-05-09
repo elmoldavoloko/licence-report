@@ -142,7 +142,15 @@
 \def\signature#1#2{\par\noindent#1\dotfill\null\\*
   {\raggedleft #2\par}}
   
-\newenvironment{titlepagefont}{\fontfamily{ptm}\selectfont}{\par}
+
+\renewenvironment{titlepage}{
+    \fontfamily{ptm}\selectfont
+    \pagestyle{empty}
+    \centering
+    \bfseries
+}{
+    \clearpage
+}
 
 \renewcommand{\title}[2]{
     \newcommand{\titleen}{#1}
@@ -207,3 +215,6 @@
 \def\plannumber{\stepcounter{plancount}\arabic{plancount}.}
 
 
+% \pagestyle{plain}
+% \pagenumbering{arabic}
+% \setcounter{page}{8}
