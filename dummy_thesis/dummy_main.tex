@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper,titlepage]{styles/tumthesis}
+
+\begin{document}
+
+\input{cover/cover}
+\input{cover/titlepage}
+\input{cover/taskbook}
+
+\input{dummy_thesis/declaration}
+\includepdf[]{dummy_thesis/dummy_aviz}
+
+% \input{additional/Abstract_rom.tex} 
+% \clearpage
+% \input{additional/Abstract_eng.tex} 
+% \clearpage
+
+% \tableofcontents
+% \clearpage
+
+
+\addcontentsline{toc}{section}{List of tables}
+\listoftables
+\clearpage
+
+\addcontentsline{toc}{section}{List of figures}
+\listoffigures
+\clearpage
+
+\addcontentsline{toc}{section}{Listings}
+\lstlistoflistings
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Introduction}
+\input{additional/Introduction.tex}
+\clearpage
+
+\input{dummy_thesis/chapter1.tex}
+\clearpage
+
+\input{dummy_thesis/chapter2.tex}
+\clearpage
+
+
+\phantomsection
+\addcontentsline{toc}{section}{Conclusions}
+\input{additional/Conclusion.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\input{additional/References.tex}
+
+\end{document}
