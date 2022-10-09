@@ -9,6 +9,13 @@ An unofficial LaTeX thesis template for Bachelor's studies at the Technical Univ
 3. Press "New Project", "Upload Project" then drag and drop the zip you have downloaded;
 4. Consult the [cheat sheet](https://github.com/elmoldavoloko/licence-report/blob/master/cheatsheet.md) for a quick start of writing the thesis. 
 
+## Notes
+
+Overleaf settings to compile the project:
+* compiler `pdfLaTeX`
+* TeX Live version `2021`
+* Main document `main.tex`
+
 
 <!--## Contributing-->
 
