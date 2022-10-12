@@ -7,7 +7,8 @@ An unofficial LaTeX thesis template for Bachelor's studies at the Technical Univ
 1. Download this template [here](https://github.com/elmoldavoloko/licence-report/archive/refs/heads/master.zip);
 2. Go to [overleaf.com](https://www.overleaf.com) and create an account;
 3. Press "New Project", "Upload Project" then drag and drop the zip you have downloaded;
-4. Consult the [cheat sheet](https://github.com/elmoldavoloko/licence-report/blob/master/cheatsheet.md) for a quick start of writing the thesis. 
+4. Go to "Menu" and select "TeX Live version" to be "2021" then "Recompile";
+5. Consult the [cheat sheet](https://github.com/elmoldavoloko/licence-report/blob/master/cheatsheet.md) for a quick start of writing the thesis. 
 
 
 <!--## Contributing-->
